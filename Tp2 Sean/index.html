@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sean's Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Menu cacher -->
+<div id="menu-overlay" class="menu-overlay hidden">
+  <ul class="menu-list">
+    <li><a href="#welcome" class="menu-link">Accueil</a></li>
+    <li><a href="#work" class="menu-link">Vidéo</a></li>
+    <li><a href="#galerie" class="menu-link">Galerie</a></li>
+    <li><a href="#articles" class="menu-link">Articles</a></li>
+    <li><a href="#tableau" class="menu-link">Tableau</a></li>
+    <li><a href="#contact-form" class="menu-link">Inscription</a></li>
+  </ul>
+</div>
+
+  <!-- Banner -->
+  <div class="banner hidden">
+    <div class="name">Sean's Portfolio</div>
+    <!-- Wrap the button with an anchor tag -->
+    <a href="https://www.instagram.com/sean.filmographics/profilecard/?igsh=MW4ycHZhdTQ4NGVseQ%3D%3D" class="book-now-link">
+      <button class="book-now">Book Now</button>
+    </a>
+  </div>
+
+  <!-- Menu -->
+  <section id="welcome" class="welcome">
+    <div class="content">
+      <h1>TP2</h1>
+      <p>Sean-Emmanuel Mbida 1W1 – Mise en page Web</p>
+      <p>Techniques d’intégration multimédia</p>
+      <a href="https://www.instagram.com/sean.filmographics/profilecard/?igsh=MW4ycHZhdTQ4NGVseQ%3D%3D" class="book-now-link">
+        <button class="book-now">Book Now</button>
+      </a>
+      <video autoplay muted loop id="background-video">
+        <source src="assets/img/Comp 1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <!-- button de defilage -->
+    <div class="scroll-down-container">
+      <span class="scroll-down-text">Scroll Down</span>
+      <div class="scroll-down-arrow">
+        <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 16l4-4h-3V4h-2v8H8l4 4z"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+  <!-- Boutton Navigation et Bar de recherche -->
+  <div class="header hidden">
+    <button id="menu-button" class="menu-button orange">☰</button>
+    <div class="search-bar-container">
+      <input type="text" id="search-bar" class="search-bar" placeholder="Search...">
+    </div>
+  </div>
+  <!-- Video -->
+  <section id="work" class="section work">
+    <h2>Vidéo</h2>
+    <div class="video-container">
+      <!-- Embed YouTube Video 1 -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+      <!-- Embed YouTube Video 2 -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+      <!-- Embed YouTube Video 3 -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+  
+
+<!-- Section Galerie -->
+<section id="galerie" class="section galerie">
+  <h2>Galerie</h2>
+  <!-- Expension d'image -->
+<div class="image-overlay" id="image-overlay">
+  <button class="close-button" id="close-button">&times;</button>
+  <img id="overlay-image" src="" alt="Expanded Image">
+</div>
+  <div class="gallery-container">
+    <img src="assets/img/ptim/Plan de travail 1.png" alt="Photo 1">
+    <img src="assets/img/ptim/Sean Visuals.png" alt="Photo 2">
+    <img src="assets/img/ptim/Sean-Emmanuel_Mbida_TP1.jpg" alt="Photo 3">
+    <img src="assets/img/ptim/TP2 – AFFICHE DE FILM_Sean.jpg" alt="Photo 3">
+    <img src="assets/img/josh 6.png" alt="Photo 3">
+    <img src="assets/img/My porfolio.jpg" alt="Photo 3">
+    <img src="assets/img/Soul Knights 4.png" alt="Photo 3">
+    <img src="assets/img/banner no borders.png" alt="Photo 3">
+    <img src="assets/img/day_10_complete.png" alt="Photo 3">
+    <img src="assets/img/Thumbnail (2).png" alt="Photo 3">
+  </div>
+</section>
+
+<!-- Section Article -->
+<section id="articles" class="section articles">
+  <h2>Articles</h2>
+  <div class="articles-container">
+    <article>
+      <h3>L'animation 3D</h3>
+      <p>L'animation 3D est devenue un pilier essentiel dans l'industrie du 
+        contenu numérique. Elle permet de créer des scènes et des personnages réalistes ou 
+        imaginaires, utilisés dans des films, des jeux vidéo, des publicités et bien plus. 
+        Les créateurs utilisent des logiciels comme Blender ou Autodesk Maya pour donner vie 
+        à des idées abstraites. Cette technologie permet non seulement d'enrichir les visuels,
+         mais aussi de raconter des histoires immersives.
+      </p>
+      <a href="#" class="read-more">Lire la suite</a>
+    </article>
+    <article>
+      <h3>Les Effets Visuel</h3>
+      <p>Les effets visuels (VFX) sont aujourd'hui incontournables dans la production 
+        cinématographique. Que ce soit pour les super-héros, les créatures fantastiques ou 
+        les paysages en CGI, les VFX transforment la vision d'un réalisateur en réalité visuelle. 
+        Des logiciels comme After Effects ou Nuke sont utilisés pour manipuler les images et 
+        ajouter des éléments graphiques qui n'existent pas dans le monde réel. Ces effets 
+        augmentent l'impact visuel et émotionnel des films.
+      </p>
+      <a href="#" class="read-more">Lire la suite</a>
+    </article>
+  </div>
+</section>
+
+<!--Tableau-->
+<section id="tableau" class="section tableau">
+  <h2>Tableau des Projets</h2>
+  <table>
+    <caption>Suivi des Projets Vidéo</caption>
+    <thead>
+      <tr>
+        <th>Nom du Projet</th>
+        <th>Description</th>
+        <th>Date de Lancement</th>
+        <th>Statut</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Animation 3D de Danseur</td>
+        <td>Création d'un personnage 3D dansant avec Blender</td>
+        <td>01/06/2024</td>
+        <td>Complété</td>
+      </tr>
+      <tr>
+        <td>Effets Visuels - Jeu Vidéo</td>
+        <td>Composition d'effets spéciaux pour un jeu vidéo dans After Effects</td>
+        <td>15/07/2024</td>
+        <td>En Cours</td>
+      </tr>
+      <tr>
+        <td>Film Court - L'intrus</td>
+        <td>Mini-film avec effets visuels dans Premiere Pro et After Effects</td>
+        <td>11/12/2024</td>
+        <td>Complété</td>
+      </tr>
+      <tr>
+        <td>Motion Graphics 2022</td>
+        <td>Projet de création de motion graphics pour une campagne publicitaire.</td>
+        <td>05/23/2022</td>
+        <td>Non Complété</td>
+      </tr>
+      <tr>
+        <td>Render 3D - Space Scene</td>
+        <td>Création d'une scène spatiale en 3D avec rendu haute qualité.</td>
+        <td>10/14/2023</td>
+        <td>Complété</td>
+      </tr>
+      <tr>
+        <td>Montage Jeu Vidéo</td>
+        <td>Montage d'une vidéo de gameplay pour un jeu vidéo avec effets et transitions.</td>
+        <td>08/24/2024</td>
+        <td>Complété</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Suivi des projets réalisés avec passion et professionnalisme.</td>
+      </tr>
+    </tfoot>
+  </table>
+</section>
+
+  <!-- inscription -->
+<section id="socials" class="section socials">
+  <h2>Inscription</h2>
+  <form id="contact-form" class="contact-form">
+    <label for="user-name">Votre Nom:</label>
+    <input type="text" id="user-name" name="user-name" placeholder="Entrer votre nom" required>
+  
+    <label for="user-email">Votre Email:</label>
+    <input type="email" id="user-email" name="user-email" placeholder="Entrer votre email" required>
+  
+    <label for="user-password">Votre mot-de-passe:</label>
+    <input type="password" id="user-password" name="user-password" placeholder="Entrer votre mot de passe" required>
+  
+    <label>Sexe:</label>
+    <div class="radio-group">
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Homme</label>
+    
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Femme</label>
+    </div>
+  
+    <label for="user-message">Votre Message:</label>
+    <textarea id="user-message" name="user-message" placeholder="Ecrivez votre message ici" required></textarea>
+  
+    <button type="submit" class="submit-btn">Envoyer</button>
+    <button type="reset" class="reset-btn">Refaire</button>
+  </form>
+  
+  
+</section>
+
+<!--Pied de page-->
+<footer>
+  <p>Collège de Maisonneuve</p>
+  <p>
+    <a href="privacy.html">Avis de confidentialité | Privacy Notice</a>
+  </p>
+  <ul class="social-icons">
+    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+  </ul>
+</footer>
+
+</body>
+</html>
